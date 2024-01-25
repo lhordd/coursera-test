@@ -3,10 +3,79 @@
 
 <head>
     <title>Hello there...</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello Coursera! why can't I see this text?? this is the text you're seeing. The title is abooooove</h1>
+    <h1 style="color: #00BBBB;">Hello Coursera! why can't I see this text?? this is the text you're seeing. The title is
+        abooooove</h1>
+    <!-- it seems like color can be stated as a hexadecimal or as base colors -->
+    <h1>tasty</h1>
+    <h2>I wonder why I didn't do any of this last time I was learning this stuff</h2>
+    <h6>This is the smallest heading size. wow that's tiny</h6>
+    <nav c>#</nav>
+    <a href="#links">Links -- via the fragment option</a>
+    <a href="#test" name="testlink">trying to get this link to work</a>
 </body>
 
+
 </html>
+
+<!-- browser-sync start --server --directory --files "*" -->
+<!-- above is the code needed to start browser sync-->
+
+<body>
+    <h1>Testing links</h1>
+    <div>There's some mumbo jumbo going on</div>
+    <a href="..">go back a folder</a>
+    <a href="#">
+        <div>an empty fragment will throw you to the top</div>
+    </a>
+    <div>It appears as though the a tag behaves like phrasing content, but you are able to insert various things into
+        it, changing it's behavior</div>
+    <section name="links">
+        <p>
+            the last couple links are internal links. This is an external link.
+            <a href="http://www.google.com">external link to google that opens in the current tab</a>
+            <a href="http://www.google.com" target="_blank">&nbsp;and this is an external link to google that opens a
+                new tab</a>
+        </p>
+    </section>
+    <section id="test">I'm using this section as a test link. I gave it the name test, and will try calling to it from
+        above. That didn't work, I think id is the proper attribute. That worked beautifully. Though I don't quite
+        understand the name part as I have one set up that doesn't seem to want to work the way I thought it'd work. <a
+            href="#testlink">If this works, it should send you back up to the link that brought you here.</a>
+        that just about cements my understanding of links, so far. Something I didn't note about fragment identifiers,
+        though, is that you can share where you are in a page
+    </section>
+    <p>
+        <img src="https://files.oaiusercontent.com/file-iKCkYL22tNvnRN0ZvWx9732N?se=2024-01-25T14%3A23%3A53Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D038cf947-d7a4-430c-ab00-3893e7242766.webp&sig=zLGGFnqay4GqRfcPe9fXW4oSKdxjPbYE8ULuQ0x%2BhjY%3D"
+            width="400" height="400"
+            alt="It's good practice to include alt attributes for people who use screen readers--it reads out the contents for them">testing
+        text here to see how that goes. this is fun(ny)
+    </p>
+    <img src="https://files.oaiusercontent.com/file-wtzCWBfDGbMMwUZldOH2VfFE?se=2024-01-25T14%3A26%3A33Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Db1e513e4-4746-4178-a78a-032294366e31.webp&sig=K7H/RDl16KdNCL9sRfWQFuM2udtj4QnzvlJJIjZdDKg%3D"
+        width="600" height="300" alt="filipino coding superhero">this img is a standalone, to see how that fares. img
+    tags don't need to be embedded in other elements, other than body? I'll test body
+</body>
+<img src="https://files.oaiusercontent.com/file-cy0uNgExh56jNLW0Cf0vZAuV?se=2024-01-25T14%3A30%3A25Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D3ddf21b4-ff2e-4411-8113-55edf65b0728.webp&sig=6mjoYC37l8uvApDFNwgb/Quugon0aNvZj/5oe5sGy/E%3D"
+    alt="A hairless woman's silhouette with a background appearing similar to outerspace with warm and cool colors in patchy sections">
+this one wasn't size specified, so it populated to its full size. not specifying size is bad for layout as things become
+jumpy.
+
+<style>
+    p:hover {
+        color: red;
+        size: 100em;
+
+    }
+
+    div>p:active {
+        font-size: 300px;
+        color: forestgreen;
+
+    }
+</style>
+<div>
+    <p>ooooooh, fancy big scary guy gets clicked.</p>
+</div>

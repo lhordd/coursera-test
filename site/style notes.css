@@ -1,0 +1,77 @@
+/* this is my first comment, and a funky test on style sheets*/
+/* below will be an example CSS rule */
+p {
+    color: blue;
+}
+
+/* wow, so a shortcut for commenting is ctrl + k, c. you have to do those parts separately. 
+back to topic, above is a rule. "color: blue;" is the declaration, where the first part is
+ a property, and blue is the value. p here is the 'selector'*/
+/* a collection of these rules would be called a style sheet, they can be empty--but those are 
+useless, though there. */
+/* I think you need to declare the style tag */
+/* there are different kinds of selectors; you can select elements, class, and ids. */
+
+p {
+    color: maroon;
+}
+
+/* that is an element */
+
+.class {
+    color: forestgreen;
+}
+
+/* that is a class, those are defined (created) with an initial . When using it however, you do not use a . */
+
+#name {
+    color: brown;
+}
+
+/* it's similar to the class selector */
+
+#name,
+p {
+    color: navy;
+}
+
+/* selectors can be grouped together to share properties. I believe in this example
+i'd be overwriting the changes that I had made prior to this declaration/rule */
+
+
+/* you can apply a class to an element/tag as shown below */
+p.class {
+    color: yellow;
+}
+
+/* in this example, all p tags with a .class class will become yellow. This does not change the
+tag or class separately (or elements of that class), but only as a combo */
+
+/* the child selector */
+body>p {
+    color: black;
+}
+
+/* in this example, body is the parent and p is the child, where child means it is
+'subordinate' to or rested within another element. This only applies when it is a direct child.
+*/
+
+/* descendant selector works in the more general fashion; */
+body p {
+    color: blanchedalmond;
+}
+
+/* in this case, the p element will be changed to blanchedalmond even if it's 
+nested within another element within the body tag. If it is without the body tag, 
+the rule(s) do not apply */
+
+/* these last two special selectors don't apply only to elements, but also to classes and such. */
+
+/* Pseudo-class selector */
+selector:pseudo-class {
+    color: blue;
+}
+
+/* when a selector is assigned a pseudo class, it behaves accordingly. 
+there are different kinds of pseudo class selectors. */
+/* the popular ones are ":link" ":visited" ":hover" ":active" ":nth-child(*) */
