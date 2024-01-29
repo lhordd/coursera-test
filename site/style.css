@@ -1,8 +1,28 @@
-body * {
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 /* p {
     font-family: 'Times New Roman', Times, serif;
+} */
+
+.background {
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+    /* adding new code to see if I can get the whole box to span the screen */
+    box-sizing: border-box;
+    /* border box is the way to declare that you want the box to be sized out to the border
+normally it doesn't behave that way. That being said, this attribute is not inheritable and
+must be declared individually or wholly with the universal selector(*) */
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
 } */

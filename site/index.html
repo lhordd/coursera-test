@@ -5,6 +5,7 @@
     <title>Hello there...</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<section class="background">testing</section>
 
 <body>
     <h1 style="color: #00BBBB;">Hello Coursera! why can't I see this text?? this is the text you're seeing. The title is
@@ -32,7 +33,7 @@
         <div>an empty fragment will throw you to the top</div>
     </a>
     <div>It appears as though the a tag behaves like phrasing content, but you are able to insert various things into
-        it, changing it's behavior</div>
+        it, changing its behavior</div>
     <section name="links">
         <p>
             the last couple links are internal links. This is an external link.
@@ -57,25 +58,41 @@
     <img src="https://files.oaiusercontent.com/file-wtzCWBfDGbMMwUZldOH2VfFE?se=2024-01-25T14%3A26%3A33Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Db1e513e4-4746-4178-a78a-032294366e31.webp&sig=K7H/RDl16KdNCL9sRfWQFuM2udtj4QnzvlJJIjZdDKg%3D"
         width="600" height="300" alt="filipino coding superhero">this img is a standalone, to see how that fares. img
     tags don't need to be embedded in other elements, other than body? I'll test body
+    <img src="https://files.oaiusercontent.com/file-cy0uNgExh56jNLW0Cf0vZAuV?se=2024-01-25T14%3A30%3A25Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D3ddf21b4-ff2e-4411-8113-55edf65b0728.webp&sig=6mjoYC37l8uvApDFNwgb/Quugon0aNvZj/5oe5sGy/E%3D"
+        alt="A hairless woman's silhouette with a background appearing similar to outerspace with warm and cool colors in patchy sections">
+    this one wasn't size specified, so it populated to its full size. not specifying size is bad for layout as things
+    become
+    jumpy.
+
+    <style>
+        p:hover {
+            color: red;
+            size: 100em;
+
+        }
+
+        .big:active {
+            font-size: 3em;
+            color: rgb(0, 82, 0);
+            text-transform: uppercase;
+        }
+    </style>
+    <div>
+        <p class="big">ooooooh, fancy big scary guy gets clicked.</p>
+    </div>
+    <div class="background">testing</div>
+    <!-- the background here isn't working as intended because div is nested in body. -->
 </body>
-<img src="https://files.oaiusercontent.com/file-cy0uNgExh56jNLW0Cf0vZAuV?se=2024-01-25T14%3A30%3A25Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D3ddf21b4-ff2e-4411-8113-55edf65b0728.webp&sig=6mjoYC37l8uvApDFNwgb/Quugon0aNvZj/5oe5sGy/E%3D"
-    alt="A hairless woman's silhouette with a background appearing similar to outerspace with warm and cool colors in patchy sections">
-this one wasn't size specified, so it populated to its full size. not specifying size is bad for layout as things become
-jumpy.
 
-<style>
-    p:hover {
-        color: red;
-        size: 100em;
+<section class="background">testing</section>
+<!-- it is interesting to note that using body on top of a body will display the body with a
+declared attribute (blue violet color in this case.) doing so will result 
+in changing the browser color, as desired. but that's the whole page. -->
+<!-- according to the lecture though, it could be something else
+I think it might be the default browser settings. one uber work around I wasn't willing to
+resort to quite yet was changing all things with the universal selector, but i'll do that now.-->
+<!-- it looks the way I want it now, but everything else no longer has margins or padding sooooooo... -->
+<!-- I noticed that in the lecture he set the body's margin and padding to 0, I haven't done that so I'll comment out the universal selector. -->
+<!-- both kinda do the same thing, I'll stick with the body behaving this way -->
 
-    }
-
-    div>p:active {
-        font-size: 300px;
-        color: forestgreen;
-
-    }
-</style>
-<div>
-    <p>ooooooh, fancy big scary guy gets clicked.</p>
-</div>
+<!-- margins when left to right are cumulative. From top and down they collapse -->
