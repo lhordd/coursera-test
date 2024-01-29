@@ -26,3 +26,6 @@ must be declared individually or wholly with the universal selector(*) */
     margin: 0;
     padding: 0;
 } */
+.talus {
+    background: url("talus.png") fixed center;
+}
