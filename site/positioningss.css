@@ -1,0 +1,30 @@
+/* positioning styles */
+p {
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+
+}
+
+.redbg {
+    background-color: red;
+    position: absolute;
+    top: 300px;
+}
+
+.orangebg {
+    background-color: orange;
+}
+
+.yellowbg {
+    background-color: yellow;
+}
+
+.greenbg {
+    background-color: green;
+}
+
+#test {
+    /* this is just to see if I can create an id without content and assign it to a tag. it does work that way, which is really nice */
+}
