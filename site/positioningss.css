@@ -1,20 +1,24 @@
 /* positioning styles */
+/* body {
+    position: relative;
+} */
+
 p {
     box-sizing: border-box;
-    height: 30px;
-    width: 30px;
+    height: 100px;
+    width: 100px;
     border: 1px solid black;
-
 }
 
 .redbg {
     background-color: red;
-    position: absolute;
-    top: 300px;
+
 }
 
 .orangebg {
     background-color: orange;
+    right: 5px;
+
 }
 
 .yellowbg {
@@ -25,6 +29,10 @@ p {
     background-color: green;
 }
 
-#test {
-    /* this is just to see if I can create an id without content and assign it to a tag. it does work that way, which is really nice */
+#a {
+    position: absolute;
+}
+
+#r {
+    position: relative;
 }
